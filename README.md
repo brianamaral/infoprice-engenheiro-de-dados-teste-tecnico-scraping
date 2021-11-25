@@ -32,8 +32,8 @@ Decidi fazer meu próprio crawler do zero, ao invés de usar o Scrapy. Por quê?
 Eu estava errado? Com certeza! Porém aprendi muitas coisas no meio do processo. Em primeiro plano, decidi fuçar bastante o site da Comper, para ver como era a organização do site e seu funcionamento. 
 Assim que achei as tags e classes que representavam o que eu precisava, e tendo mapeado quais urls eu deveria acessar, segui para o código do crawler. No desenvolvimento do código, foquei em primeiro
 em ter certeza que eu conseguia retornar as informações necessárias para a entrega, então segui para refatorar o código em classes e metódos, seguindo umas regras de clean code e SOLID. Porém percebi que o crawler estava
-muito lento, coisa de pegar 1.5 paginas por segundo, ou seja, escalaria muito mal. Então decidi utilizar programação assíncrona para fazer as requisições, sendo sincero foi aqui que gastei a maior parte do meu tempo
-primeiramente, eu não sabia programação assíncrona, e quando fiz funcionar as chamadas, o servidor me dava algumas barradas, porém consegui contornar com algumas estratégias de backoff. No fim, consegui subir para algo entre 13 a 21 chamadas por segundo,
+muito lento, coisa de pegar 1.5 paginas por segundo, ou seja, escalaria muito mal. Então decidi utilizar programação assíncrona para fazer as requisições, sendo sincero foi aqui que gastei a maior parte do meu tempo.
+ Primeiramente, eu não sabia programação assíncrona, e quando fiz funcionar as chamadas, o servidor me dava algumas barradas, porém consegui contornar com algumas estratégias de backoff. No fim, consegui subir para algo entre 13 a 21 chamadas por segundo,
 que me deixou satisfeito com o resultado.
 
 ## Utilização
@@ -55,7 +55,7 @@ sudo apt get python3
 ### Instalação
 * Clone o repositório
 ```sh
-git clone https://github.com/brianamaral/infoprice-engenheiro-de-dados-teste-tecnico-etl.git
+git clone https://github.com/brianamaral/infoprice-engenheiro-de-dados-teste-tecnico-scraping.git
 ```
 
 ### Rodar
