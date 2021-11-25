@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+
+    scraper:
+        build: .
+
+        volumes:
+          - "./:/code"
+    
